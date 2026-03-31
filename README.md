@@ -1,21 +1,110 @@
-# Open Source Software Audit - Git Version Control
+# OSS Audit Project
 
-**Author:** Mridul Chandel  
-**Registration Number:** 24BCE10544  
-**Slot:** F11  
-**Course:** Open Source Software (Capstone Project)  
+## 📌 Overview
 
-## Project Description
-This repository contains a comprehensive system audit focusing on **Git**, the industry standard for distributed version control. The project highlights Git's operational footprint on a Linux ecosystem and its alignment with the GPL v2 open-source license. Included are five custom Bash scripts designed to interrogate system properties, verify FOSS packages, analyze disk/permission states, parse system logs, and dynamically generate an open-source manifesto.
+This repository contains an **Open Source Software (OSS) Audit** project. The main objective of this project is to analyze dependencies, identify vulnerabilities, and ensure compliance with open-source licenses.
 
-## Repository Layout
-```text
+## 🎯 Objectives
+
+* Identify all third-party dependencies used in the project
+* Analyze security vulnerabilities in dependencies
+* Review open-source licenses for compliance
+* Suggest improvements and safer alternatives
+
+## 🛠️ Tools & Technologies Used
+
+* Programming Language: (Specify here, e.g., Python / Java / Node.js)
+* Dependency Management: (e.g., npm, pip, Maven)
+* Security Tools:
+
+  * npm audit / pip-audit / OWASP Dependency Check
+* Version Control: Git & GitHub
+
+## 📂 Project Structure
+
+```
 oss-audit-24bce10544/
-├── README.md                           # Project documentation
-├── script1_sys_info.sh                 # Fetches and displays core system/user parameters
-├── script2_foss_checker.sh             # Verifies Git installation & FOSS alternatives
-├── script3_storage_audit.sh            # Scans vital directories for disk usage & rights
-├── script4_log_parser.sh               # Scans a designated log file for specific keywords
-├── script5_oss_philosophy.sh           # Interactively builds a custom markdown manifesto
-└── report_notes/
-    └── report_support_pack.md          # Output logs, notes, and viva preparation
+│── src/                # Source code files
+│── reports/            # Generated audit reports
+│── scripts/            # Automation scripts (if any)
+│── requirements.txt    # Dependencies (for Python projects)
+│── package.json       # Dependencies (for Node.js projects)
+│── README.md          # Project documentation
+```
+
+## 🚀 How to Run the Project
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/mridul24bce10544-cmd/oss-audit-24bce10544.git
+   ```
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd oss-audit-24bce10544
+   ```
+
+3. Install dependencies:
+
+   * For Node.js:
+
+     ```bash
+     npm install
+     ```
+   * For Python:
+
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+4. Run audit tools:
+
+   * Node.js:
+
+     ```bash
+     npm audit
+     ```
+   * Python:
+
+     ```bash
+     pip-audit
+     ```
+
+## 📊 Audit Process
+
+1. Dependency Identification
+2. Vulnerability Scanning
+3. License Compliance Check
+4. Risk Assessment
+5. Reporting & Recommendations
+
+## 📈 Sample Output
+
+* List of vulnerable packages
+* Severity levels (Low, Medium, High, Critical)
+* Suggested fixes or updates
+
+## ⚠️ Limitations
+
+* Results depend on the database of the audit tool
+* Zero-day vulnerabilities may not be detected
+
+## 🔮 Future Improvements
+
+* Integration with CI/CD pipelines
+* Automated vulnerability fixing
+* Dashboard for visualization
+
+## 👥 Contributors
+
+* Mridul Chandel (24BCE10544)
+
+## 📜 License
+
+This project is for academic purposes only.
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
